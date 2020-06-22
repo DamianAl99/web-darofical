@@ -42,7 +42,7 @@ try {
     $mail->Body    = $contenido;
 
     $mail->send();
-
+    echo 'El mensaje se envio correctamente';
     header("Location: index.html");
 } catch (Exception $e) {
     echo "Error al enviar el mensaje: {$mail->ErrorInfo}";
