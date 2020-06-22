@@ -5,8 +5,8 @@
     $telefono = $_POST["numero"];
     $mensaje = $_POST["nota"];
     $contenido = "Nombre: ".$nombre ."\nCorreo: ".$correo ."\nTelefono: ".$telefono ."\nMensaje: ". $mensaje;
-    mail($destino, "Contacto", $contenido);
-    header("Location: gracias.html");
+    mail($destino, $contenido);
+    header("location: gracias.html");
     
 
 ?>
