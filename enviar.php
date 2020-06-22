@@ -11,36 +11,35 @@
     $correo = $_POST["correo"];
     $telefono = $_POST["numero"];
     $mensaje = $_POST["nota"];
-    $contenido = "Nombre: ".$nombre ."\nCorreo: ".$correo ."\nTelefono: ".$telefono ."\nMensaje: ". $mensaje;
+    $contenido = "Nombre: ".$nombre ."<br>Correo: ".$correo ."<br>Telefono: ".$telefono ."<br>Mensaje: ". $mensaje;
 
     // Instantiation and passing `true` enables exceptions
 $mail = new PHPMailer(true);
 
 try {
     //Server settings
-    $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      // Enable verbose debug output
+    $mail->SMTPDebug = 0;                      // Enable verbose debug output
     $mail->isSMTP();                                            // Send using SMTP
     $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
     $mail->Username   = 'webdamianal@gmail.com';                     // SMTP username
-    $mail->Password   = 'portafolio44';                               // SMTP password
+    $mail->Password   = 'portafolio44'; //desde que cuente se enviara todo                          // SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
     $mail->Port       = 587;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
     //Recipients
-    $mail->setFrom('webdamianal@gmail.com', 'Damian');
-    $mail->addAddress($_POST["correo"]);     // Add a recipient
+    $mail->setFrom($_POST["correo"]);//el correo que ponen para enviar es esto
+    $mail->addAddress('webdamianal@gmail.com', 'Damian');     //en donde se enviara
     
 
     // Attachments
-    $mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
-    $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
+    //$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
+    //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
     $mail->Subject = 'Poryecto';
     $mail->Body    = $contenido;
-    $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();
     echo 'El mensaje se envio correctamente';
