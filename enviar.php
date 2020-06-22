@@ -42,7 +42,8 @@ try {
     $mail->Body    = $contenido;
 
     $mail->send();
-    header("Location: https://damianar.herokuapp.com/")
+
+    header("Location: index.html");
 } catch (Exception $e) {
     echo "Error al enviar el mensaje: {$mail->ErrorInfo}";
 }
