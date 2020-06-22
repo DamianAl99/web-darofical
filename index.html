@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <!--CABECERA MENU-->
+    <nav>
+        <div class="logo"><img src="img/D.png" alt="Logo"></div>
+        <button id="btn-menu"><div class="logo-menu"><i class="fas fa-bars"></i></div></button>
+        <div id="menu-pr">
+            <ul>
+                <li class="btn-menu"><a href="#menu">menu</a></li>
+                <li class="btn-aboutme"><a href="#aboutme">aboutme</a></li>
+                <li class="btn-proyect"><a href="#proyects">proyects</a></li>
+                <li class="btn-contact"><a href="#contact">contacts</a></li>
+            </ul>
+        </div>
+    </nav>
+
+     <!--SECTION PRINCIPAL-->
+    <section id="menu" class="principal grid">
+        <div class="content-principal">
+            <div class="name">
+                <p>Hi</p>
+                <p>I'm</p>
+                <p>Damian</p>
+            </div>
+            <div class="WebDev">
+                <h1>Web Developer</h1>
+            </div>
+            <div class="knows">
+                <div class="letters">
+                    <h2>HTML</h2>
+                    <h2>CSS</h2>
+                    <h2>JavaScript</h2>
+                    <h2>Angular</h2>
+                </div>
+            </div>
+            <a href="./img/CV Damian.docx" class="btn-curriculum"><p>Curriculum</p></a>
+        </div>
+    </section>
+     <!--SECTION ABOUT ME-->
+    <section id="aboutme" class="aboutme grid">
+        <div class="content-aboutme">
+            <div class="title">
+                <h3>ABOUT ME</h3>
+            </div>
+            <div class="text">
+                <p>Hello, my name is Damian Almada, I am 20 years old, I study at the Polytechnic and Artistic University of Paraguay (its the Paraguayan Harvard).</p>
+                <p>
+                    <ul>
+                        I have knowledge about:
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>NodeJs</li>
+                        <li>PHP</li>
+                        <li>MongoDb</li>
+                        <li>MySQL</li>
+                        <li>JQuery</li>
+                        <li>Angular</li>
+                        <li>Express</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="imgBook">
+                <span><i class="fas fa-book"></i></span>
+            </div>
+        </div>
+        
+    </section>
+
+     <!--SECTION PROYECTS-->
+     <section id="proyects" class="proyects grid">
+         <div class="content-proyects">
+             <div class="title">
+                 <h3>PROYECTS</h3>
+             </div>
+             <div class="all">
+                 <p>Proyect 1</p>
+                 <div class="proyec">
+                     <img src="img/img-proyect.jpg" alt="Proyectos">
+                 </div>
+             </div>
+             <div class="all">
+                <p>Proyect 2</p>
+                <div class="proyec">
+                    <img src="img/img-proyect.jpg" alt="Proyectos">
+                </div>
+            </div>
+         </div>
+     </section>
+
+     <!--SECTION CONTACTS-->
+     <section id="contact" class="contact">
+        <div class="content-contact">
+            <div class="title">
+                <h3>CONTACTS</h3>
+            </div>
+            <div class="contact-center">
+                
+                 <form action="enviar.php" method="post">
+                  
+                     <input type="text" name="name" placeholder="Nombre" required>
+                     
+                     <input type="text" name="correo" placeholder="Correo" required>
+
+                     <input type="number" name="numero" placeholder="Numero de Telefono" required>
+                     
+                     <textarea name="nota" placeholder="Notas" required></textarea>
+        
+                     <button type="submit">Send</button>
+        
+                 </form>
+            </div>
+        </div>
+     </section>
+     
+     <!--FOOTER-->
+     <footer>
+         <p>Damian Almada © Todos los Derechos Reservado 2020</p>
+     </footer>
+     <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
