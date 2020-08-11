@@ -1,10 +1,10 @@
 <?php
-    use PHPMailer\PHPMailer\PHPMailer;
+   /* use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\Exception;
 
     require 'mailer/Exception.php';
     require 'mailer/PHPMailer.php';
-    require 'mailer/SMTP.php';
+    require 'mailer/SMTP.php';*/
 
     $destino = "damiianalmada06@gmail.com";
     $nombre = $_POST["name"];
@@ -13,7 +13,7 @@
     $mensaje = $_POST["nota"];
     $contenido = "Nombre: ".$nombre ."<br>Correo: ".$correo ."<br>Telefono: ".$telefono ."<br>Mensaje: ". $mensaje;
 
-    // Instantiation and passing `true` enables exceptions
+ /*   // Instantiation and passing `true` enables exceptions
 $mail = new PHPMailer(true);
 
 try {
@@ -46,15 +46,15 @@ try {
     header("Location: index.html");
 } catch (Exception $e) {
     echo "Error al enviar el mensaje: {$mail->ErrorInfo}";
-}
+}*/
 
-    /*$destino = "damiianalmada06@gmail.com";
+    $destino = "damiianalmada06@gmail.com";
     $nombre = $_POST["name"];
     $correo = $_POST["correo"];
     $telefono = $_POST["numero"];
     $mensaje = $_POST["nota"];
     $contenido = "Nombre: ".$nombre ."\nCorreo: ".$correo ."\nTelefono: ".$telefono ."\nMensaje: ". $mensaje;
-    mail($destino,"contactos", $contenido) or die("erro al enviar el mensaje");*/
+    mail($destino,"contactos", $contenido) or die("erro al enviar el mensaje");
     
     
 
