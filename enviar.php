@@ -41,7 +41,7 @@ try {
     echo "Error al enviar el mensaje: {$mail->ErrorInfo}";
 }*/
 
-    $destino = "damiianalmada06@gmail.com";
+    $destino = "webdamianal@gmail.com";
     $nombre = $_POST["name"];
     $correo = $_POST["correo"];
     $telefono = $_POST["numero"];
