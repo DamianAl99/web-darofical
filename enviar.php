@@ -27,7 +27,7 @@ try {
     $mail->Username   = 'webdamianal@gmail.com';                     // SMTP username
     $mail->Password   = 'asaditoymandioca'; //desde que cuente se enviara todo                          // SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
-    $mail->Port       = 465;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
+    $mail->Port       = 587;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
     //Recipients
     $mail->setFrom($_POST["correo"]);//el correo que ponen para enviar es esto
@@ -40,7 +40,7 @@ try {
 
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
-    $mail->Subject = 'Poryecto';
+    $mail->Subject = 'Proyecto';
     $mail->Body    = $contenido;
 
     $mail->send();
