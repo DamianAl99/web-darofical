@@ -12,9 +12,9 @@
     $telefono = $_POST["numero"];
     $mensaje = $_POST["nota"];
     $contenido = "Nombre: " . $nombre . "\nCorreo: " . $correo . "\nTelefono: " . $telefono . "\nMensaje: " . $mensaje;
-    /*mail($destino,"contactos", $contenido);
-    header("Location: index.html");*/
-
+    mail($destino,"contactos", $contenido);
+    header("Location: index.html");
+/*
     // Instantiation and passing `true` enables exceptions
 $mail = new PHPMailer(true);
 
@@ -27,7 +27,7 @@ try {
     $mail->Username   = 'webdamianal@gmail.com';                     // SMTP username
     $mail->Password   = 'asaditoymandioca'; //desde que cuente se enviara todo                          // SMTP password
     $mail->SMTPSecure =  "tls"/*PHPMailer::ENCRYPTION_STARTTLS*/;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
-    $mail->Port       = 587;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
+/*    $mail->Port       = 587;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
     //Recipients
     $mail->setFrom('webdamianal@gmail.com', 'Damian');//el correo que ponen para enviar es esto
@@ -49,5 +49,5 @@ try {
 } catch (Exception $e) {
     echo "Error al enviar el mensaje: {$mail->ErrorInfo}";
 }
-
+*/
 ?>
