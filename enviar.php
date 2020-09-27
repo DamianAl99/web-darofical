@@ -19,9 +19,9 @@
 $mail = new PHPMailer(true);
 
 try {
-    //Server settings
-    $mail->SMTPDebug = true;                      // Enable verbose debug output
     $mail->isSMTP();                                            // Send using SMTP
+    //Server settings
+    $mail->SMTPDebug = 0;                      // Enable verbose debug output
     $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
     $mail->Username   = 'webdamianal@gmail.com';                     // SMTP username
