@@ -31,7 +31,7 @@ try {
 
     //Recipients
     $mail->setFrom('webdamianal@gmail.com', 'Damian');//el correo que ponen para enviar es esto
-    $mail->addAddress('damiianalmada06@gmail.com', 'Portafolio');     //en donde se enviara
+    $mail->addAddress('webdamianal@gmail.com', 'Portafolio');     //en donde se enviara
     
 
     // Attachments
