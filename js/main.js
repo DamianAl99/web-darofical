@@ -26,7 +26,7 @@ contact.addEventListener("click", function(){
 const ListaDeProyectos = [
     {
         title: 'MINDFULNESS',
-        description: 'Web Informativa. Contiene informacion sobre la meditacin, practicas, Centros de meditacion',
+        description: 'Web Informativa. Contiene informacion sobre la meditacion, practicas, Centros de meditacion',
         url: 'https://meditacion.vercel.app'
     },
     {
