@@ -62,6 +62,7 @@ nav .logo img{
     width: 100%;
     height: 100%;
     border-radius: 50px;
+    color: white;
 }
 nav #btn-menu{
     color: var(--textColor);
@@ -142,7 +143,9 @@ nav #btn-menu:hover{
 .content-principal .name{
     font-size: 2.5em;
     margin-top: 100px;
-    
+    background: linear-gradient(#da22ff, #f45c43);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 .content-principal .WebDev{
     font-size: 1.2em;
@@ -166,7 +169,7 @@ nav #btn-menu:hover{
     width: auto;
     height: 40px;
     padding-top: 10px;
-    background: orange;
+    background: linear-gradient(#da22ff, #f45c43);
     border-radius: 4px;
     color: white;
     text-align: center;
@@ -231,7 +234,7 @@ nav #btn-menu:hover{
 }
 #proyects .content-proyects{
     width: 90%;
-    margin: auto;
+    margin: auto;  
     padding-top: 65px;
     background: reds;
     display: grid;
@@ -244,6 +247,80 @@ nav #btn-menu:hover{
     margin-top: 20px;
     
 }
+#proyects .content-proyects .all{
+    width: 98%;
+    height: 180px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 4px;
+    box-shadow: 0 0 2px rgba(71, 44, 44, 0.2);
+    color: var(--textColor);
+    overflow: hidden;
+    position: relative;
+}
+#proyects .content-proyects .all:hover{
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.4);
+}
+#proyects .content-proyects .all .centerContainer{
+    width: 100%;
+    height: 100%;
+    
+}
+#proyects .content-proyects .all .centerContainer .allTitle{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+}
+#proyects .content-proyects .all .centerContainer .allTitle .pTitle{
+    width: 100%;
+    height: 40px;
+}
+#proyects .content-proyects .all .centerContainer .allTitle .pTitle p{
+    text-align: center;
+    font-size: 1.4em;
+}
+#proyects .content-proyects .all .centerContainer .allDescription{
+    background: linear-gradient(#da22ff, #f45c43);
+    position: absolute;
+    top: 90%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    clip-path: polygon(50% 0%, 100% 14%, 100% 100%, 75% 100%, 25% 100%, 0 100%, 0 14%);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+#proyects .content-proyects .all .centerContainer .allDescription .pDescription{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+#proyects .content-proyects .all .centerContainer .allDescription .pDescription span{
+    background: transparent;
+    font-size: 1.2em;
+}
+#proyects .content-proyects .all .centerContainer .allDescription:hover{
+    top:0;
+}
+
+/*
+#proyects .content-proyects .all .centerContainer .proyec{
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 50px;
+    background: linear-gradient(#da22ff, #f45c43);
+}
+
+
+
 #proyects .content-proyects .all{
     background: greens;
     height: auto;
@@ -264,7 +341,7 @@ nav #btn-menu:hover{
 #proyects .content-proyects .all .proyec:hover{
     background: rgba(255, 255, 255, 0.9);
 }
-
+*/
 
 
 
@@ -439,7 +516,7 @@ footer{
     }
     #aboutme .content-aboutme .imgBook{
         display: inline;
-        background: greens;
+        color:#3900443b;
         position: absolute;
         bottom: 25px;
         right: 50px;

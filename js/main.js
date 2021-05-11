@@ -26,28 +26,33 @@ contact.addEventListener("click", function(){
 const ListaDeProyectos = [
     {
         title: 'MINDFULNESS',
-        description: 'Web Informativa. Contiene informacion sobre la meditacion, practicas, Centros de meditacion',
-        url: 'https://meditacion.vercel.app'
+        description: 'Web, contiene información importante sobre la meditación, los tipos de meditación e incluso algunos videos tutoriales',
+        url: 'https://meditacion.vercel.app',
+        type: "Angular"
     },
     {
         title: 'COMIDAS PARAGUAYAS',
-        description: 'Web Informativa. Contiene informacion sobre comidas, recetas, tutoriales',
-        url: 'https://food-rho.vercel.app/home'
+        description: 'Web, mostrando la comida Paraguaya, los platos mas tradicionales, Ingredientes, etc',
+        url: 'https://food-rho.vercel.app/home',
+        type: "Angular"
     },
     {
         title: 'WEB DE NOTAS',
-        description: 'Web para guardar Notas',
-        url: 'https://damianal99.github.io/Nota/'
+        description: 'Pequeña Web hecha para guardar notas en el Local Storage',
+        url: 'https://damianal99.github.io/Nota/',
+        type: "JavaScript"
     },
     {
         title: 'COMPLOT',
-        description: 'Web similar a la de Complot Paraguay',
-        url: 'https://damianal99.github.io/complot/'
+        description: 'Web con estructura similar a la web de Complot Paraguay',
+        url: 'https://damianal99.github.io/complot/',
+        type: "JavaScript"
     },
     {
         title: 'API PAISES',
-        description: 'Web Informativa. Buscador de Paises con Numero de Habitantes y mas.',
-        url: 'https://searchpais.herokuapp.com/index.html'
+        description: 'Hecha para mostrar información relevante sobre los paises utilizando una Api',
+        url: 'https://searchpais.herokuapp.com/index.html',
+        type: "Angular"
     }
 ];
 
@@ -59,9 +64,13 @@ let forProyect = '';
 for(let i = 0; i < ListaDeProyectos.length; i++){
     forProyect += `
     <a href="${ListaDeProyectos[i].url}" class="all">
-        <p>${ListaDeProyectos[i].title}</p>
-        <div class="proyec">
-        ${ListaDeProyectos[i].description}
+        <div class="centerContainer">
+            <div class="allTitle">
+                <div class="pTitle"><p>${ListaDeProyectos[i].title}</p></div>
+            </div>
+            <div class="allDescription">
+                <div class="pDescription"><span>${ListaDeProyectos[i].description}</span></div>
+            </div>
         </div>
     </a>
     `;
@@ -73,4 +82,8 @@ mainProyects.innerHTML = `
              </div>
             ${forProyect}
 `;
+
+const proyectDivHover = document.querySelector(".all");
+
+
 
