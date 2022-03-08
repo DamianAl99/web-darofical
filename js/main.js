@@ -25,9 +25,9 @@ contact.addEventListener("click", function(){
 
 const ListaDeProyectos = [
     {
-        title: 'MINDFULNESS',
+        title: 'MEDITAPY',
         description: 'Web, contiene información importante sobre la meditación, los tipos de meditación e incluso algunos videos tutoriales',
-        url: 'https://meditacion.vercel.app',
+        url: 'https://meditacion.vercel.app/',
         type: "Angular"
     },
     {
