@@ -15,11 +15,15 @@
 }
 
 /* base styles */
+html{
+    scroll-behavior: smooth;
+}
 body{
     background: var(--fondoPrimario);
     color: var(--textColor);
     overflow-x: hidden;
     font-size: 18px;
+    
 }
 h1, h2, h3, h4{
     font-weight: normal;
