@@ -49,10 +49,10 @@ const ListaDeProyectos = [
         type: "JavaScript"
     },
     {
-        title: 'API PAISES',
-        description: 'Hecha para mostrar información relevante sobre los paises utilizando una Api',
-        url: 'https://searchpais.herokuapp.com/index.html',
-        type: "Angular"
+        title: 'PORTAFOLIO DE SKYLAH LEE (no real)',
+        description: 'Diseño Web de un portafolio hecho a medida para la Usuaria',
+        url: 'https://damianal99.github.io/FrontendPortafolio/',
+        type: "Html, Css, Js"
     }
 ];
 
