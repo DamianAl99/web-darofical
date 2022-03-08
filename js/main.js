@@ -52,7 +52,7 @@ const ListaDeProyectos = [
         title: 'PORTAFOLIO DE SKYLAH LEE (no real)',
         description: 'Diseño Web de un portafolio hecho a medida para la Usuaria',
         url: 'https://damianal99.github.io/FrontendPortafolio/',
-        type: "Html, Css, Js"
+        type: "Html, Css, Js "
     }
 ];
 
