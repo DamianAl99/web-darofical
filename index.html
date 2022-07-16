@@ -1,112 +1,345 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1.0">
-    <meta name="keywords" content="Damian Almada Ruiz, Desarrollador Paraguayo, Web Developer">
-    <meta name="description" content="Hola, soy Damian Almada, Desarrollador Web Junior">
-    <meta name="owner" content="Damian Almada">
-    <meta name="author" content="Damian Almada Ruiz">
-    <title>Damian Almada Ruiz | Web Developer
-    </title>
-    <script defer src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximun-scale=1.0"
+    />
+    <meta
+      name="keywords"
+      content="Desarrollo Web, Tienda Online, Tienda Virtual"
+    />
+    <meta name="description" content="Tu Negocio al siguiente nivel" />
+    <meta name="owner" content="Damian Almada" />
+    <meta name="author" content="Damian Almada Ruiz" />
+    <title>DarOfical Web | Tu Negocio Online</title>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/stylesDraggable.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
     <!--CABECERA MENU-->
     <nav>
-        <a href="/index.html"><div class="logo"><img src="img/D.png" alt="Logo"></div></a>
-        <button id="btn-menu"><div class="logo-menu"><i class="fas fa-bars"></i></div></button>
-        <div id="menu-pr">
-            <ul>
-                <li class="btn-menu"><a href="#menu">menu</a></li>
-                <li class="btn-aboutme"><a href="#aboutme">aboutme</a></li>
-                <li class="btn-proyect"><a href="#proyects">proyects</a></li>
-                <li class="btn-contact"><a href="#contact">contacts</a></li>
-            </ul>
-        </div>
+      <a href="/index.html"><div class="logo">DAROFICAL</div></a>
+      <button id="btn-menu">
+        <div class="logo-menu"><i class="fas fa-bars"></i></div>
+      </button>
+      <div id="menu-pr">
+        <ul>
+          <li class="btn-menu"><a href="#menu">menu</a></li>
+          <li class="btn-aboutme"><a href="#aboutme">nosotros</a></li>
+          <li class="btn-proyect"><a href="#proyects">proyectos</a></li>
+          <li class="btn-contact"><a href="#contact">contacto</a></li>
+        </ul>
+      </div>
     </nav>
-
-     <!--SECTION PRINCIPAL-->
+    <!--SECTION PRINCIPAL-->
     <section id="menu" class="principal grid">
-        <div class="content-principal">
-            <div class="name">
-                <p>Hi</p>
-                <p>I'm</p>
-                <p>Damian</p>
-            </div>
-            <div class="WebDev">
-                <h1>Web Developer</h1>
-            </div>
-            <div class="knows">
-                <div class="letters">
-                    <h2>HTML</h2>
-                    <h2>CSS</h2>
-                    <h2>JavaScript</h2>
-                    <h2>Angular</h2>
-                </div>
-            </div>
-            <a href="./img/CVDamian.docx" class="btn-curriculum"><p>Curriculum</p></a>
+      <div class="content-principal">
+        <div class="name">
+          <p>Tú Negocio, al siguiente nivel</p>
         </div>
+        <div class="WebDev">
+          <h1>La solución con DAROFICAL</h1>
+        </div>
+        <div class="knows">
+          <div class="center">
+            <h1 id="circle">INNOVADO ELEGANTE SEGURO ÚNICO</h1>
+          </div>
+          <div class="a"></div>
+        </div>
+        <button>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span><a href="#contact">Contacto</a></span>
+        </button>
+      </div>
     </section>
-     <!--SECTION ABOUT ME-->
+    <!--SECTION INTRODUCTION-->
+    <section id="introduction">
+      <div class="title">INTRODUCCIÓN</div>
+      <div class="content-introduction">
+        <div class="card">
+          <p>Todos los negocios con status y valor, tienen su tarjeta de presentación en la internet (su propio <span>Sitio Web</span>).</p>
+          <p>Es por eso que no queremos que tengas una simple y común tarjeta de presentación (como el de la mayoria) y en <span>DAROFICAL</span>, llevamos al extremo la idea de que <span>tu Negocio</span> tenga un Sitio Web que sobre salga del resto.</p>
+          <p>Con nuestra experiencia, innovacion y creatividad, te ayudarémos con tu nuevo Sitio Web, que <span>elevará el prestigio</span> de tu negocio y que permitirá que tus clientes aumenten su nivel de confianza en el producto o servicio que ofreces.</p>
+          <p>Un sitio Web básicamente te ayuda a incrementar las ventas, la confianza en tu cliente y el <span>valor en el mercado</span> de cualquier PYME.</p>
+        </div>
+      </div>
+    </section>
+    <!--SECTION ABOUT ME-->
     <section id="aboutme" class="aboutmee grid">
-        <div class="content-aboutme">
-            <div class="title">
-                <h3>ABOUT ME</h3>
-            </div>
-            <div class="text">
-                <p>Hello, my name is <span>Damian Almada</span>, I am 22 years old, i love the technology and i study <span>Computer Engineering</span> at the Polytechnic and Artistic University of Paraguay.</p>
-                <p>
-                    <ul>
-                        <span>I have knowledge about:</span>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>NodeJs</li>
-                        <li>PHP</li>
-                        <li>MongoDb</li>
-                        <li>MySQL</li>
-                        <li>JQuery</li>
-                        <li>Angular</li>
-                        <li>Express</li>
-                    </ul>
-                </p>
-            </div>
-            <div class="imgBook">
-                <p><i class="fas fa-book"></i></p>
-            </div>
+      <div class="title">SOBRE NOSOTROS</div>
+      <div class="content-aboutme">
+        <div class="title">
+          <h3>QUIENES SOMOS?</h3>
         </div>
-        
+        <div class="text">
+          <div class="info">
+            <p>
+              DAROFICAL está empezando este año <span>2022</span>, con un grupo
+              de 4 jóvenes con experiencia y gánas de
+              <span>ayudar a tu Negocio</span> a ir al siguiente nivel con un
+              <span>státus</span> mas que los demas.
+            </p>
+            <p>
+              Decidimos comenzar nuestro camino al darnos cuenta que ofrecemos
+              <span>valor agregado y de calidad</span> a los clientes, que
+              estadisticamente estan <span>super satisfechos</span> con las
+              herramientas que brindamos.
+            </p>
+            <p>
+              La metodologia que útilizamos hace que los clientes experimenten
+              lo <span>Fácil y necesario</span> que es desarrollar
+              <span>su Tienda Online</span> con nosotros.
+            </p>
+          </div>
+          <div class="img">
+            <img
+              src="./img/quienes somos.jpg"
+              alt="imagen de contacto"
+              srcset=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="content-aboutme">
+        <div class="title">
+          <h3>QUE TE OFRECEMOS?</h3>
+        </div>
+        <div class="text">
+          <div class="info">
+            <p>
+              Como somos unos constantes estudiantes de la Técnologia, aqui te
+              mencionamos <span>lo mejor</span> qué nos diferencia de los demás
+            </p>
+            <ul>
+              <li>
+                Diseño Web 100% único, simétrico y equilibrado por los ojos de
+                <span>dos diseñadores</span> Profesionales.
+              </li>
+              <li>Usabilidad <span>fácil y nueva</span> (UX).</li>
+              <li>Totalmente adaptable a todos los dispositivos.</li>
+              <li>Garantía de 30 días.</li>
+              <li>
+                Certificado SSL (Precio normal 9.99$).
+                <span>GRATIS!</span>
+              </li>
+              <li>Manual de usuario 15$. <span>GRATIS!</span></li>
+            </ul>
+          </div>
+          <div class="img">
+            <img
+              src="./img/que ofrecemos.jpg"
+              alt="imagen de contacto"
+              srcset=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="content-aboutme">
+        <div class="title">
+          <h3>PORQUE ELEGIRNOS?</h3>
+        </div>
+        <div class="text">
+          <div>
+            <p>
+              Los 4 integrantes de éste emprendimiento, trabajaron en el sector
+              del <span>Desarrollo Web</span> un periódo máximo de 5 años.
+            </p>
+            <p>
+              Elegimos enfocarnos en la técnologia Web, mas en especifico en el
+              Desarrollo del mismo, porque nuestro plan de implementar tecnologia en negocios es la única en el pais, por lo que emprender dando el primer paso es nuestro logros mas grande.
+            </p>
+            <p>Los clientes que ya tuvimos en estos meses que estamos activos en el negocio, experimentaron la buena atención y experiencia de nuestro equipo.</p>
+          </div>
+          <div class="img">
+            <img
+              src="./img/valor.jpg"
+              alt="imagen de contacto"
+              srcset=""
+            />
+          </div>
+        </div>
+      </div>
     </section>
-
-     <!--SECTION PROYECTS-->
-     <section id="proyects" class="proyects grid">
-         <div class="content-proyects">
-             <div class="title">
-                 <h3>PROYECTS</h3>
-             </div>
-
-         </div>
-     </section>
-
-     <!--SECTION CONTACTS-->
-     <section id="contact" class="contact">
-        <div class="content-contact">
-            <div class="title">
-                <h3>CONTACTS</h3>
-            </div>
-            <div class="contact-center">
-                <a href="mailto:webdamianal@gmail.com?subject=Portafolio de Damian Almada&body=Hola! Te saludamos desde tu sitio web Damian Almada">Contacto</a>
-            </div>
+    <!--SECTION PROYECTS-->
+    <section id="proyects" class="proyects grid">
+      <div class="title">PROYECTOS</div>
+      <div class="content-proyects"></div>
+    </section>
+    <!--SECTION SERVICES-->
+    <section id="services" class="services grid">
+      <div class="title">SERVICIOS</div>
+      <div class="content-services">
+        <div class="card">
+          <p class="title">Básico</p>
+          <div class="pricecontainer">
+            <p class="price">220.000 Gs</p>
+            <p class="pricedescriptor">/Pago único</p>
+          </div>
+          <p class="includes">Este plan incluye:</p>
+          <ul class="benefitlist">
+            <li>Diseño adaptado a todo tipo de dispositivos</li>
+            <li>1 sección (One page)</li>
+            <li>Integración con Redes Sociales</li>
+            <li>2 imagenes con Slider</li>
+            <li class="no">Menu de navegación</li>
+            <li class="no">Formulario de contacto</li>
+            <li class="no">Integración de Google Maps</li>
+            <li class="no">Diseño desde cero</li>
+          </ul>
+          <div class="btncontainer">
+            <button><a
+              href="mailto:webdamianal@gmail.com?subject=DAROFICAL - Plan Básico&body=Hola! Nos encanta este plan, pongamonos en contácto."
+              >Seleccionar este plan</a
+            ></button>
+          </div>
         </div>
-     </section>
-     
-     <!--FOOTER-->
-     <footer>
-         <p>Damian Almada © Todos los Derechos Reservados. MRA, PY</p>
-     </footer>
-     <script type="text/javascript" src="js/main.js"></script>
-</body>
+        <div class="card">
+          <p class="title">Intermedio Informativo</p>
+          <div class="pricecontainer">
+            <p class="price">1.200.000 Gs</p>
+            <p class="pricedescriptor">/Pago único</p>
+          </div>
+          <p class="includes">Este plan incluye:</p>
+          <ul class="benefitlist">
+            <li>Diseño adaptado a todo tipo de dispositivos</li>
+            <li>6 secciones (One page)</li>
+            <li>Integración con Redes Sociales</li>
+            <li>6 imagenes con Slider</li>
+            <li>Menu de navegación</li>
+            <li>Formulario de contacto</li>
+            <li class="no">Integración de Google Maps</li>
+            <li class="no">Diseño desde cero</li>
+          </ul>
+          <div class="btncontainer">
+            <button><a
+              href="mailto:webdamianal@gmail.com?subject=DAROFICAL - Plan Intermedio Informativo&body=Hola! Nos encanta este plan, pongamonos en contácto."
+              >Seleccionar este plan</a
+            ></button>
+          </div>
+        </div>
+        <div class="card">
+          <p class="title">Full Informativo</p>
+          <div class="pricecontainer">
+            <p class="price">1.600.000 Gs</p>
+            <p class="pricedescriptor">/Pago único</p>
+          </div>
+          <p class="includes">Este plan incluye:</p>
+          <ul class="benefitlist">
+            <li>Diseño adaptado a todo tipo de dispositivos</li>
+            <li>10 secciones (One page)</li>
+            <li>Integración con Redes Sociales</li>
+            <li>10 imagenes con Slider</li>
+            <li>Menu de navegación superior e inferior</li>
+            <li>Formulario de contacto</li>
+            <li>Integración de Google Maps</li>
+            <li>Diseño desde cero</li>
+          </ul>
+          <div class="btncontainer">
+            <button><a
+              href="mailto:webdamianal@gmail.com?subject=DAROFICAL - Plan Full informativo&body=Hola! Nos encanta este plan, pongamonos en contácto."
+              >Seleccionar este plan</a
+            ></button>
+          </div>
+        </div>
+        <div class="card">
+          <p class="title">Avanzado</p>
+          <div class="pricecontainer">
+            <p class="price">4.200.000 Gs</p>
+            <p class="pricedescriptor">/Pago único</p>
+          </div>
+          <p class="includes">Este plan incluye:</p>
+          <ul class="benefitlist">
+            <li>Diseño adaptado a todo tipo de dispositivos</li>
+            <li>4 secciones de contenido</li>
+            <li>Integración con Redes Sociales</li>
+            <li>Hasta 3 imagenes por producto o servicio</li>
+            <li>Hasta 20 productos o servicios</li>
+            <li>Pedidos por WhatsApp personalizados</li>
+            <li>Menu de navegación superior e inferior</li>
+            <li>Formulario de contacto</li>
+            <li class="no">Galeria de imagenes</li>
+            <li>Integración de Google Maps</li>
+            <li class="no">Diseño personalizado</li>
+            <li class="no">Botones con diseño 3D. NUEVO</li>
+            <li>Autoadministrable</li>
+            <li>Manual de usuario. GRATIS</li>
+          </ul>
+          <div class="btncontainer">
+            <button><a
+              href="mailto:webdamianal@gmail.com?subject=DAROFICAL - Plan Avanzado&body=Hola! Nos encanta este plan, pongamonos en contácto."
+              >Seleccionar este plan</a
+            ></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- COMO CONTRATAR -->
+    <section id="introduction">
+      <div class="title">CÓMO CONTRATAR UN SERVICIO?</div>
+      <div class="content-introduction">
+        <div class="card">
+          <ul>
+            <li>Contáctanos via mail o <a class="wh-link" href="https://api.whatsapp.com/send?phone=595972435586">WhatsApp</a></li>
+            <li>Elegi el plan que te atrae</li>
+            <li>Reunión virtual para aclarar el servicio</li>
+            <li>Envío de materiales a utilizar en tu Web</li>
+            <li>Testeo, ajustes y publicación</li>
+            <li>Pago del servicio</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!--SECTION CONTACTS-->
+    <section id="contact" class="contact">
+      <div class="content-contact">
+        <div class="title">
+          <h3>CONTACTOS</h3>
+        </div>
+        <div class="contact-center">
+          <button>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span><a
+              href="mailto:webdamianal@gmail.com?subject=Consultas DAROFICAL&body=Hola! Te saludamos desde tu sitio web Damian Almada"
+              >Contáctanos por mail</a
+            ></span>
+          </button>
+          <button>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span><a href="https://api.whatsapp.com/send?phone=595972435586">Contáctanos por WhatsApp</a></span>
+          </button>
+          
+        </div>
+      </div>
+    </section>
+    <!--FOOTER-->
+    <footer>
+      <p>DAROFICAL © Todos los Derechos Reservados. MRA, PY</p>
+    </footer>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
 </html>
