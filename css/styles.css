@@ -15,6 +15,7 @@
 /* base styles */
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 body {
   background: var(--fondoPrimario);
@@ -338,7 +339,7 @@ nav #btn-menu:hover {
 /*como contratar*/
 .card ul li{
   list-style-type: "*";
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 /*forms*/
