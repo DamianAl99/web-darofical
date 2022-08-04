@@ -61,7 +61,7 @@ li {
   margin-left: var(--margin);
   user-select: none;
 
-  background: tomato;
+  background: rgba(255, 99, 71, 0);
   width: 90%;
   height: 350px;
   color: var(--bg-color);
@@ -72,7 +72,7 @@ li {
 .item img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 .item:last-child {
   margin-right: var(--margin);
@@ -87,7 +87,7 @@ li {
 
 @media screen and (min-width: 800px) {
   .item {
-    width: 90%;
+    width: 50%;
     height: 380px;
   }
 }
@@ -98,7 +98,6 @@ li {
   }
 
   .item {
-    width: 90%;
     height: 450px;
   }
 }
@@ -226,6 +225,10 @@ button a{
 	padding-bottom: 20px;
    }
    
+   .bajoPrecio{
+	text-decoration: line-through;
+	text-align: center;
+   }
    .title {
 	text-align: center;
 	margin-top: 0.5em;

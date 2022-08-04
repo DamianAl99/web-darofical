@@ -314,6 +314,9 @@ nav #btn-menu:hover {
   height: auto;
   position: relative;
 }
+#proyects p{
+  text-align: center;
+}
 #proyects .content-proyects .title h3 {
   color: black;
   font-weight: 600;

@@ -24,36 +24,59 @@ contact.addEventListener("click", function () {
 
 const ListaDeProyectos = [
   {
-    title: "MEDITAPY",
-    description:
-      "Web, contiene información importante sobre la meditación, los tipos de meditación e incluso algunos videos tutoriales",
-    img: "./img/contact-img.jpg",
-    type: "Angular",
-  },
-  {
     title: "COMIDAS PARAGUAYAS",
     description:
       "Web, mostrando la comida Paraguaya, los platos mas tradicionales, Ingredientes, etc",
-    img: "./img/contact-img.jpg",
+    img: "./img/A barber.jpg",
     type: "Angular",
   },
   {
     title: "WEB DE NOTAS",
     description: "Pequeña Web hecha para guardar notas en el Local Storage",
-    img: "./img/contact-img.jpg",
+    img: "./img/AC.jpg",
     type: "JavaScript",
   },
   {
     title: "COMPLOT",
     description: "Web con estructura similar a la web de Complot Paraguay",
-    img: "./img/contact-img.jpg",
+    img: "./img/web A.jpg",
     type: "JavaScript",
   },
   {
     title: "PORTAFOLIO DE SKYLAH LEE (no real)",
     description: "Diseño Web de un portafolio hecho a medida para la Usuaria",
-    img: "./img/contact-img.jpg",
+    img: "./img/web AA.jpg",
     type: "Html, Css, Js ",
+  },
+  {
+    title: "COMPLOT",
+    description: "Web con estructura similar a la web de Complot Paraguay",
+    img: "./img/web B.jpg",
+    type: "JavaScript",
+  },
+  {
+    title: "COMPLOT",
+    description: "Web con estructura similar a la web de Complot Paraguay",
+    img: "./img/web C.jpg",
+    type: "JavaScript",
+  },
+  {
+    title: "COMPLOT",
+    description: "Web con estructura similar a la web de Complot Paraguay",
+    img: "./img/web cabaña.jpg",
+    type: "JavaScript",
+  },
+  {
+    title: "COMPLOT",
+    description: "Web con estructura similar a la web de Complot Paraguay",
+    img: "./img/web Tienda Online.jpg",
+    type: "JavaScript",
+  },
+  {
+    title: "COMPLOT",
+    description: "Web con estructura similar a la web de Complot Paraguay",
+    img: "./img/web tinda moda.jpg",
+    type: "JavaScript",
   },
 ];
 
