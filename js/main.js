@@ -27,13 +27,13 @@ const ListaDeProyectos = [
     title: "COMIDAS PARAGUAYAS",
     description:
       "Web, mostrando la comida Paraguaya, los platos mas tradicionales, Ingredientes, etc",
-    img: "./img/A barber.jpg",
+    img: "./img/web ecommerce.png",
     type: "Angular",
   },
   {
     title: "WEB DE NOTAS",
     description: "Pequeña Web hecha para guardar notas en el Local Storage",
-    img: "./img/AC.jpg",
+    img: "./img/web struc.png",
     type: "JavaScript",
   },
   {
