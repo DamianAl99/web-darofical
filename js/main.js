@@ -51,7 +51,7 @@ const ListaDeProyectos = [
   {
     title: "COMPLOT",
     description: "Web con estructura similar a la web de Complot Paraguay",
-    img: "./img/web B.jpg",
+    img: "./img/web b.png",
     type: "JavaScript",
   },
   {
@@ -69,13 +69,13 @@ const ListaDeProyectos = [
   {
     title: "COMPLOT",
     description: "Web con estructura similar a la web de Complot Paraguay",
-    img: "./img/web Tienda Online.jpg",
+    img: "./img/web level.jpg",
     type: "JavaScript",
   },
   {
     title: "COMPLOT",
     description: "Web con estructura similar a la web de Complot Paraguay",
-    img: "./img/web tinda moda.jpg",
+    img: "./img/web bali.jpg",
     type: "JavaScript",
   },
 ];
@@ -168,3 +168,5 @@ function Proyects() {
   })();
 }
 Proyects();
+
+
