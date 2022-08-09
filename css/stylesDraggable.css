@@ -48,7 +48,7 @@ li {
 .items {
   position: relative;
   width: 100%;
-  overflow: hidden;
+  overflow-x:scroll;
   white-space: nowrap;
   font-size: 0;
   cursor: pointer;
