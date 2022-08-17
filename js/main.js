@@ -39,13 +39,13 @@ const ListaDeProyectos = [
   {
     title: "COMPLOT",
     description: "Web con estructura similar a la web de Complot Paraguay",
-    img: "./img/web A.jpg",
+    img: "./img/Vipp Hotel - Website.jpg",
     type: "JavaScript",
   },
   {
     title: "PORTAFOLIO DE SKYLAH LEE (no real)",
     description: "Diseño Web de un portafolio hecho a medida para la Usuaria",
-    img: "./img/web AA.jpg",
+    img: "./img/Restaurant Website.png",
     type: "Html, Css, Js ",
   },
   {
@@ -83,33 +83,17 @@ const ListaDeProyectos = [
 const mainProyects = document.querySelector(".content-proyects");
 let forProyect = "";
 
-// for (let i = 0; i < ListaDeProyectos.length; i++) {
-//   forProyect += `
-//     <a href="${ListaDeProyectos[i].url}" class="all">
-//         <div class="centerContainer">
-//             <div class="allTitle">
-//                 <div class="pTitle"><p>${ListaDeProyectos[i].title}</p></div>
-//             </div>
-//             <div class="allDescription">
-//                 <div class="pDescription"><span>${ListaDeProyectos[i].description}</span></div>
-//             </div>
-//         </div>
-//     </a>
-//     `;
-// }
 for (let i = 0; i < ListaDeProyectos.length; i++) {
     forProyect += `
-        <li class="item">
-            <img src="${ListaDeProyectos[i].img}" alt="Proyecto Web ${i+1}">
-        </li>
+        <div><img src="${ListaDeProyectos[i].img}" alt="Proyecto Web ${i+1}"></div>
       `;
   }
 mainProyects.innerHTML = `
-             <div class="wrapper">
-          <ul class="items">
-            ${forProyect}
-          </ul>
-        </div>
+<div id="slider">
+				<div class="galeria">
+          ${forProyect}
+				</div>
+</div>
 `;
 
 //CIRCULO DE TEXTO
@@ -127,46 +111,12 @@ for (var i = 0; i < circlearray.length; i++) {
 
 const proyectDivHover = document.querySelector(".all");
 
-//PROYECTS DRAGGABLE
-function Proyects() {
-  let isDown = false;
-  let startX;
-  let scrollLeft;
-  const slider = document.querySelector(".items");
+// Slider
 
-  const end = () => {
-    isDown = false;
-    slider.classList.remove("active");
-  };
-
-  const start = (e) => {
-    isDown = true;
-    slider.classList.add("active");
-    startX = e.pageX || e.touches[0].pageX - slider.offsetLeft;
-    scrollLeft = slider.scrollLeft;
-  };
-
-  const move = (e) => {
-    if (!isDown) return;
-
-    e.preventDefault();
-    const x = e.pageX || e.touches[0].pageX - slider.offsetLeft;
-    const dist = x - startX;
-    slider.scrollLeft = scrollLeft - dist;
-  };
-
-  (() => {
-    slider.addEventListener("mousedown", start);
-    slider.addEventListener("touchstart", start);
-
-    slider.addEventListener("mousemove", move);
-    slider.addEventListener("touchmove", move);
-
-    slider.addEventListener("mouseleave", end);
-    slider.addEventListener("mouseup", end);
-    slider.addEventListener("touchend", end);
-  })();
-}
-Proyects();
-
-
+$(".galeria").bxSlider({
+  mode: "fade",
+  captions: false,
+  slideWidth: 1200,
+  responsive: true,
+  pager: true,
+});
